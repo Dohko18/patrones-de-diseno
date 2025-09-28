@@ -53,7 +53,7 @@ public record User(String name, IMessageHandler chatRoom) implements ICommunicat
     
     private String sanitizeInput(String input) {
         if (input == null) return "null";
-        return input.replaceAll("[\r\n\t]", "_").replaceAll("[\p{Cntrl}]", "");
+        return input.replaceAll("[\r\n\t]", "_").replaceAll("[{Cntrl}]", "");
     }
 
     @Override
