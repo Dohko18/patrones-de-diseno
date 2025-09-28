@@ -31,7 +31,7 @@ de sus multiples componentes manualmente. Para mejorar esta situacion el patron 
 ---
 
 <h2>Diagrama de clases </h2>
-![Diagrama UML](/src/main/resources/images/builder-dark.png)
+![Diagrama UML](src/main/resources/images/builder-dark.png)
 
 # Escenario 3 — Chat Room
 
@@ -65,4 +65,4 @@ comunicarse con ellos, lo que genera un alto acoplamiento, sin embargo al usar e
 ---
 
 <h2>Diagrama de clases </h2>
-![Diagrama UML](/src/main/resources/images/mediator-dark.png)
+![Diagrama UML](src/main/resources/images/mediator-dark.png)
