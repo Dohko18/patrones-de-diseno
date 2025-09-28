@@ -23,7 +23,7 @@ public class Main {
                 .model("2025")
                 .build();
 
-        System.out.println("Toyota: \n" + toyota);
+        System.out.println("Toyota: \n" + toyota.toString());
     }
 
 }
