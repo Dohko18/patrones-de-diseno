@@ -31,7 +31,7 @@ de sus multiples componentes manualmente. Para mejorar esta situacion el patron 
 ---
 
 <h2>Diagrama de clases </h2>
-![Diagrama UML](src/main/resources/images/builder-dark.png)
+![Diagrama UML](https://github.com/Dohko18/patrones-de-diseno/blob/main/src/main/resources/images/builder-dark.png)
 
 # Escenario 3 — Chat Room
 
