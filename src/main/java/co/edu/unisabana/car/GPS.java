@@ -1,6 +1,6 @@
-package co.edu.unisaba.car;
+package co.edu.unisabana.car;
 
-import co.edu.unisaba.car.model.NavigationType;
+import co.edu.unisabana.car.model.NavigationType;
 
 /**
  * @author Ing. Darwin Esneider Rodriguez Ladino
@@ -12,6 +12,9 @@ public class GPS {
     private final String model;
 
     public GPS(NavigationType navigationType) {
+        if (navigationType == null) {
+            throw new IllegalArgumentException("NavigationType cannot be null");
+        }
         this.brand = navigationType.getBrand();
         this.model = navigationType.getModel();
     }

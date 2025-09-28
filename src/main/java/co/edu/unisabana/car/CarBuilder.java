@@ -1,6 +1,6 @@
-package co.edu.unisaba.car;
+package co.edu.unisabana.car;
 
-import co.edu.unisaba.car.model.*;
+import co.edu.unisabana.car.model.*;
 
 import java.util.List;
 
@@ -10,11 +10,10 @@ public class CarBuilder implements IBuilder<Car> {
     protected String brand;
     protected String model;
     protected RoofType roofType;
-    protected List<Tire> tires;
     protected Tire tire;
     protected Engine engine;
     protected SoundSystem sound;
-    protected GPS GPS;
+    protected GPS gps;
 
     public static CarBuilder builder(ColorType color) {
         return new CarBuilder(color);
@@ -30,12 +29,12 @@ public class CarBuilder implements IBuilder<Car> {
     }
 
     public CarBuilder brand(String val) {
-        brand = val;
+        this.brand = val;
         return this;
     }
 
     public CarBuilder model(String val) {
-        model = val;
+        this.model = val;
         return this;
     }
 
@@ -60,7 +59,7 @@ public class CarBuilder implements IBuilder<Car> {
     }
 
     public CarBuilder gpsNavigation(NavigationType val) {
-        GPS = new GPS(val);
+        this.gps = new GPS(val);
         return this;
     }
 

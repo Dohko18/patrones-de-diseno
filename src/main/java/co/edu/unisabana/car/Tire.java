@@ -1,6 +1,6 @@
-package co.edu.unisaba.car;
+package co.edu.unisabana.car;
 
-import co.edu.unisaba.car.model.TiresType;
+import co.edu.unisabana.car.model.TiresType;
 
 public class Tire {
 
@@ -10,6 +10,9 @@ public class Tire {
     private final int speedRating;
 
     public Tire(TiresType type) {
+        if (type == null) {
+            throw new IllegalArgumentException("TiresType cannot be null");
+        }
         this.rin = type.getRin();
         this.tractionGrade = type.getTractionGrade();
         this.temperatureGrade = type.getTemperatureGrade();
@@ -35,7 +38,7 @@ public class Tire {
     @Override
     public String toString() {
         return "Tire{" +
-                "rim='" + rin + '\'' +
+                "rin='" + rin + '\'' +
                 ", tractionGrade='" + tractionGrade + '\'' +
                 ", temperatureGrade='" + temperatureGrade + '\'' +
                 ", speedRating=" + speedRating +

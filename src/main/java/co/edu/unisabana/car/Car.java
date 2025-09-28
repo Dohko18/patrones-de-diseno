@@ -1,7 +1,7 @@
-package co.edu.unisaba.car;
+package co.edu.unisabana.car;
 
-import co.edu.unisaba.car.model.ColorType;
-import co.edu.unisaba.car.model.RoofType;
+import co.edu.unisabana.car.model.ColorType;
+import co.edu.unisabana.car.model.RoofType;
 
 
 import java.util.Objects;
@@ -27,7 +27,7 @@ public class Car {
         tire = builder.tire;
         engine = builder.engine;
         sound = builder.sound;
-        gpsNavigation = builder.GPS;
+        gpsNavigation = builder.gps;
     }
 
     public ColorType getColor() {
@@ -66,7 +66,7 @@ public class Car {
     public boolean equals(Object object) {
         if (object == null || getClass() != object.getClass()) return false;
         Car car = (Car) object;
-        return gpsNavigation == car.gpsNavigation && color == car.color && Objects.equals(brand, car.brand) && Objects.equals(model, car.model) && roofType == car.roofType && Objects.equals(tire, car.tire) && Objects.equals(engine, car.engine) && sound == car.sound;
+        return Objects.equals(gpsNavigation, car.gpsNavigation) && color == car.color && Objects.equals(brand, car.brand) && Objects.equals(model, car.model) && roofType == car.roofType && Objects.equals(tire, car.tire) && Objects.equals(engine, car.engine) && Objects.equals(sound, car.sound);
     }
 
     @Override
@@ -81,10 +81,10 @@ public class Car {
                 "   model='" + model + '\'' + ",\n" +
                 "   color=" + color + ",\n" +
                 "   roofType=" + roofType + ",\n" +
-                "   tire=" + (tire != null ? tire : "N/A") + ",\n" +
-                "   engine=" + (engine != null ? engine : "N/A") + ",\n" +
-                "   soundSystem=" + (sound != null ? sound : "N/A") + ",\n" +
-                "   gpsNavigation=" + (gpsNavigation != null ? gpsNavigation : "N/A") +  "\n" +
+                "   tire=" + tire + ",\n" +
+                "   engine=" + engine + ",\n" +
+                "   soundSystem=" + sound + ",\n" +
+                "   gpsNavigation=" + gpsNavigation +  "\n" +
                 '}';
     }
 

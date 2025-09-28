@@ -1,4 +1,4 @@
-package co.edu.unisaba.car.model;
+package co.edu.unisabana.car.model;
 
 import java.math.BigDecimal;
 
@@ -11,21 +11,21 @@ public enum EngineType {
 
     private final String engineType;
     private final String fuelType;
-    private final int  hosePower;
+    private final int horsePower;
     private final int torque;
     private final BigDecimal price;
 
-    EngineType(String engineType, String fuelType, int hosePower, int torque, BigDecimal price) {
+    EngineType(String engineType, String fuelType, int horsePower, int torque, BigDecimal price) {
         this.engineType = engineType;
         this.fuelType = fuelType;
-        this.hosePower = hosePower;
+        this.horsePower = horsePower;
         this.torque = torque;
         this.price = price;
     }
 
     public String getEngineType() {return engineType;}
     public String getFuelType() {return fuelType;}
-    public int getHosePower() {return hosePower;}
+    public int getHorsePower() {return horsePower;}
     public int getTorque() {return torque;}
     public BigDecimal getPrice() {return price;}
 }

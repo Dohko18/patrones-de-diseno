@@ -1,4 +1,4 @@
-package co.edu.unisaba.car.model;
+package co.edu.unisabana.car.model;
 
 public enum TiresType {
 
@@ -11,8 +11,8 @@ public enum TiresType {
     private final String temperatureGrade;
     private final int speedRating;
 
-    TiresType(String rim, String tractionGrade, String temperatureGrade, int speedRating) {
-        this.rin = rim;
+    TiresType(String rin, String tractionGrade, String temperatureGrade, int speedRating) {
+        this.rin = rin;
         this.tractionGrade = tractionGrade;
         this.temperatureGrade = temperatureGrade;
         this.speedRating = speedRating;

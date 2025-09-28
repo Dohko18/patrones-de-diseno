@@ -1,6 +1,6 @@
-package co.edu.unisaba.car;
+package co.edu.unisabana.car;
 
-import co.edu.unisaba.car.model.EngineType;
+import co.edu.unisabana.car.model.EngineType;
 
 import java.math.BigDecimal;
 
@@ -14,7 +14,7 @@ public class Engine {
     public Engine(EngineType engineType) {
         this.engineType = engineType.getEngineType();
         this.fuelType = engineType.getFuelType();
-        this.horsePower = engineType.getHosePower();
+        this.horsePower = engineType.getHorsePower();
         this.torque = engineType.getTorque();
         this.price = engineType.getPrice();
     }

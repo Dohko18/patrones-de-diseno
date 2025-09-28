@@ -1,9 +1,9 @@
-package co.edu.unisaba.car.model;
+package co.edu.unisabana.car.model;
 
 public enum NavigationType {
     BASICO("Garmin","DriveSmart 65"),
     AVANZADO("TomTom", "GO Supreme 6"),
-    MULTIMEDIA("Pioner", "AVIC-W8500NEX");
+    MULTIMEDIA("Pioneer", "AVIC-W8500NEX");
 
     private final String brand;
     private final String model;

@@ -1,4 +1,4 @@
-package co.edu.unisaba.chatRoom;
+package co.edu.unisabana.chatRoom;
 
 /**
  * @author Ing. Darwin Esneider Rodriguez Ladino

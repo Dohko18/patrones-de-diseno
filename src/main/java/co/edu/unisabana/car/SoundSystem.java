@@ -1,6 +1,6 @@
-package co.edu.unisaba.car;
+package co.edu.unisabana.car;
 
-import co.edu.unisaba.car.model.SoundSystemType;
+import co.edu.unisabana.car.model.SoundSystemType;
 
 /**
  * @author Ing. Darwin Esneider Rodriguez Ladino
@@ -14,6 +14,9 @@ public class SoundSystem {
     private final boolean touchScreenEnabled;
 
     public SoundSystem(SoundSystemType soundSystemType) {
+        if (soundSystemType == null) {
+            throw new IllegalArgumentException("SoundSystemType cannot be null");
+        }
         this.brand = soundSystemType.getBrand();
         this.model = soundSystemType.getModel();
         this.bluetoothEnabled = soundSystemType.isBluetoothEnabled();

@@ -1,4 +1,4 @@
-package co.edu.unisaba.chatRoom;
+package co.edu.unisabana.chatRoom;
 
 public interface IMessageHandler {
     void sendMessageToUser(String sender, String receiver, String message);

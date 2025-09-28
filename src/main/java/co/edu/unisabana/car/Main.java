@@ -1,11 +1,8 @@
-package co.edu.unisaba.car;
+package co.edu.unisabana.car;
 
 
-import co.edu.unisaba.car.model.*;
+import co.edu.unisabana.car.model.*;
 
-
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
         createCar();
@@ -23,7 +20,7 @@ public class Main {
                 .model("2025")
                 .build();
 
-        System.out.println("Toyota: \n" + toyota.toString());
+        System.out.println("Toyota: \n" + toyota);
     }
 
 }
